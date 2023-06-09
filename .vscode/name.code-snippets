@@ -1,0 +1,12 @@
+{
+
+	"color": {
+		"scope": "css",
+		"prefix": "gft",
+		"body": [
+			"color:red",
+			"font-size:25px"
+		],
+		"description": "Log output to console"
+	}
+}

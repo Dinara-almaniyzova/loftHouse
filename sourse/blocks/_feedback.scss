@@ -1,0 +1,34 @@
+.feedback {
+    padding-bottom: 180px;
+
+    @include mediaTablet {
+        padding-bottom: 90px;
+    }
+}
+
+
+.feedbacc__title {
+    margin-bottom: 38px;
+
+    @include mediaTablet {
+        margin-bottom: 24px;
+    }
+}
+
+
+.feedbacc__form {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    align-items: center;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.form__privacy{
+    @include mediaTablet {
+        grid-row: 4/5;
+    }
+}

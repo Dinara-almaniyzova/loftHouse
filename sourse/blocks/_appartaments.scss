@@ -1,0 +1,32 @@
+.apportaments {
+    position: relative;
+
+
+    &::before {
+        content: "III";
+        right: calc(50% + 555px);
+        transform: translate(50%, 0%);
+        line-height: 1.1;
+        @include decorNumber()
+    }
+}
+
+
+.apportaments__title {
+    margin-bottom: 88px;
+
+    @include mediaTablet {
+        margin-bottom: 44px;
+    }
+}
+
+
+.apportaments__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+}

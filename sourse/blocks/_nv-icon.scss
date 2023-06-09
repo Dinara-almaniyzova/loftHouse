@@ -1,0 +1,52 @@
+.nav-icon-btn {
+    --height: 3px;
+    --width: 34px;
+
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    display: flex;
+}
+
+.nav-icon {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+
+    background-color: $accent ;
+    display: flex;
+
+    &::before,
+    &::after {
+        position: absolute;
+        width: var(--width);
+        height: var(--height);
+        content: "";
+        top: 9px;
+        left: 0;
+        display: block;
+        background-color: $accent ;
+        transition: all 0.2s ease-in;
+    }
+
+    &::after {
+        top: 19px;
+    }
+
+}
+
+.rotate {
+    .nav-icon::before {
+        transform: rotate(45deg);
+        top: 20px;
+    }
+
+    .nav-icon::after {
+        transform: rotate(-45deg);
+        top: 20px;
+    }
+
+    .nav-icon{
+        background-color: transparent;
+    }
+}
